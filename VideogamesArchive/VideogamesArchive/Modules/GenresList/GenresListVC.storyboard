@@ -30,7 +30,7 @@
         <scene sceneID="j6n-Mi-pv2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZSM-5k-d40" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Genres" id="X43-AF-qUW"/>
+                    <tabBarItem key="tabBarItem" title="Genres" image="GenresIcon" id="X43-AF-qUW"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="3ny-Pg-8fj">
@@ -54,4 +54,7 @@
             <point key="canvasLocation" x="-218" y="63"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GenresIcon" width="30" height="30"/>
+    </resources>
 </document>

@@ -30,7 +30,7 @@
         <scene sceneID="Fxv-oI-92O">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VDP-ZN-SU5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Companies" id="0lR-6L-Guf"/>
+                    <tabBarItem key="tabBarItem" title="Companies" image="CompaniesIcon" id="0lR-6L-Guf"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="U6s-I5-Oqs">
@@ -54,4 +54,7 @@
             <point key="canvasLocation" x="1" y="-231"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="CompaniesIcon" width="30" height="29"/>
+    </resources>
 </document>

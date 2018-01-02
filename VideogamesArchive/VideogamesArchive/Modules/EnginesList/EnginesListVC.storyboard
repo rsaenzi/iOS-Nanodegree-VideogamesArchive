@@ -30,7 +30,7 @@
         <scene sceneID="M5W-ke-hPi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5ks-hL-6pv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Engines" id="pm4-1p-l3k"/>
+                    <tabBarItem key="tabBarItem" title="Engines" image="GameEnginesIcon" id="pm4-1p-l3k"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="nIE-Lp-fIL">
@@ -54,5 +54,8 @@
             <point key="canvasLocation" x="-654" y="100"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GameEnginesIcon" width="225" height="225"/>
+    </resources>
     <color key="tintColor" red="0.99928683039999999" green="0.16564062239999999" blue="0.1659538746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

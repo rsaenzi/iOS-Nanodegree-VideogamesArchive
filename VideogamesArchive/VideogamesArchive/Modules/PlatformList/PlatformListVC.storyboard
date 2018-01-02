@@ -30,7 +30,7 @@
         <scene sceneID="mi2-qk-wQi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ffI-j1-1Y3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Platforms" id="a7I-Ew-nrL"/>
+                    <tabBarItem key="tabBarItem" title="Platforms" image="PlatformIcon" id="a7I-Ew-nrL"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="yMz-FK-gnQ">
@@ -54,5 +54,8 @@
             <point key="canvasLocation" x="228" y="-135"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="PlatformIcon" width="30" height="30"/>
+    </resources>
     <color key="tintColor" red="0.99928683039999999" green="0.16564062239999999" blue="0.1659538746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
