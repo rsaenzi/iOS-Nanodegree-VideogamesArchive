@@ -13,6 +13,14 @@ class EnginesListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        RequestGetGameEngines.request { response in
+            switch response {
+                
+            case .success(let output):
+                print("Success!")
+            default:
+                print("Error")
+            }
+        }
     }
 }

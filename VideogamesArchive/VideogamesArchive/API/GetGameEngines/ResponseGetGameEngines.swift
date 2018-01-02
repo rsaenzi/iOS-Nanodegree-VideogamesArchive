@@ -11,7 +11,7 @@ import Moya
 enum ResponseGetGameEngines {
     
     // Specific Responses
-    case success(output: OutputGetGameEngines)
+    case success(output: [OutputGetGameEngines])
     
     // Status Code Errors
     case invalidStatusCode(statusCode: Int)

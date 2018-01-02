@@ -8,4 +8,5 @@
 
 enum ApiEndpoint {
     case getGameEngines
+    case getPlatforms
 }

@@ -7,7 +7,7 @@
 //
 
 struct OutputGetGameEngines: Codable {
-    let id: String
+    let id: Int
     let name: String
     let logo: Logo?
     let slug: String
@@ -32,4 +32,3 @@ struct OutputGetGameEngines: Codable {
 struct Logo: Codable {
     let url: String
 }
-
