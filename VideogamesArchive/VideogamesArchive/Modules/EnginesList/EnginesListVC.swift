@@ -75,10 +75,13 @@ extension EnginesListVC: UITableViewDataSource {
 extension EnginesListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 115
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let screen: GameGalleryVC = loadViewController()
+        navigationController?.pushViewController(screen, animated: true)
     }
 }

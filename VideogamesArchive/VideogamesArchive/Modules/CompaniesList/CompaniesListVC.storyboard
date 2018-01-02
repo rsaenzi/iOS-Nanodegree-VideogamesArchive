@@ -130,4 +130,5 @@
     <resources>
         <image name="CompaniesIcon" width="30" height="29"/>
     </resources>
+    <color key="tintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
 </document>

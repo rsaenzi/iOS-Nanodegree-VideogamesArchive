@@ -130,4 +130,5 @@
     <resources>
         <image name="GenresIcon" width="30" height="30"/>
     </resources>
+    <color key="tintColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
 </document>

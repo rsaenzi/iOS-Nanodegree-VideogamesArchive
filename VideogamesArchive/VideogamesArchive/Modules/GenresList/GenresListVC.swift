@@ -58,5 +58,8 @@ extension GenresListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let screen: GameGalleryVC = loadViewController()
+        navigationController?.pushViewController(screen, animated: true)
     }
 }

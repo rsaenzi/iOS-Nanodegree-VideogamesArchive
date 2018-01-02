@@ -10,7 +10,6 @@ struct OutputGetGameEngines: Codable {
     let id: Int
     let name: String
     let logo: Logo?
-    let slug: String
     let url: String
     let gamesIds: [Int]
     let platformsIds: [Int]?
@@ -21,7 +20,6 @@ struct OutputGetGameEngines: Codable {
         case id
         case name
         case logo
-        case slug
         case url
         case gamesIds = "games"
         case platformsIds = "platforms"

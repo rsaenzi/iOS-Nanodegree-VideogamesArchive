@@ -9,7 +9,6 @@
 struct OutputGetCompanies: Codable {
     let id: Int
     let name: String
-    let slug: String
     let url: String
     let developedGamesIds: [Int]?
     let publishedGamesIds: [Int]?
@@ -18,7 +17,6 @@ struct OutputGetCompanies: Codable {
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case slug
         case url
         case developedGamesIds = "developed"
         case publishedGamesIds = "published"

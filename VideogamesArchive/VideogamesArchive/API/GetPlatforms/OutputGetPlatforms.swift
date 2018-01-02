@@ -10,7 +10,6 @@ struct OutputGetPlatforms: Codable {
     let id: Int
     let name: String
     let logo: Logo?
-    let slug: String
     let url: String
     let website: String?
     let summary: String?
@@ -22,7 +21,6 @@ struct OutputGetPlatforms: Codable {
         case id
         case name
         case logo
-        case slug
         case url
         case website
         case summary

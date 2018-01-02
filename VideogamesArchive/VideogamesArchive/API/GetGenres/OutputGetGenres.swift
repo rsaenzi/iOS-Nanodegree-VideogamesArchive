@@ -9,7 +9,6 @@
 struct OutputGetGenres: Codable {
     let id: Int
     let name: String
-    let slug: String
     let url: String
     let gamesIds: [Int]
     
@@ -17,7 +16,6 @@ struct OutputGetGenres: Codable {
     enum CodingKeys: String, CodingKey {
         case id
         case name
-        case slug
         case url
         case gamesIds = "games"
     }
