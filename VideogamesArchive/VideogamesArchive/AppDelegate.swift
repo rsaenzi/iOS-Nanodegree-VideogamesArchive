@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Global tint colors
+        window?.tintColor = #colorLiteral(red: 0.9992868304, green: 0.1656406224, blue: 0.1659538746, alpha: 1)
+        UIApplication.shared.statusBarStyle = .lightContent
+        UINavigationBar.appearance().tintColor = UIColor.white
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9992868304, green: 0.1656406224, blue: 0.1659538746, alpha: 1)
+        
         return true
     }
 

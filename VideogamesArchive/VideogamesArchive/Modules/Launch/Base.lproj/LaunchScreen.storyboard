@@ -40,4 +40,5 @@
     <resources>
         <image name="LaunchIcon" width="400" height="400"/>
     </resources>
+    <color key="tintColor" red="0.99928683039999999" green="0.16564062239999999" blue="0.1659538746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
