@@ -13,7 +13,7 @@
         <!--Genres-->
         <scene sceneID="vKk-gh-O7m">
             <objects>
-                <viewController id="e4m-7W-VBD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GenresListVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e4m-7W-VBD" customClass="GenresListVC" customModule="VideogamesArchive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VkF-gv-ieR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

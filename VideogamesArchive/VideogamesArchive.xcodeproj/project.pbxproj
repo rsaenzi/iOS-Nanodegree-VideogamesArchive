@@ -15,6 +15,9 @@
 		6710423B1FFBE49B0061FB44 /* CompaniesListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6710423A1FFBE49B0061FB44 /* CompaniesListVC.storyboard */; };
 		6710423D1FFBE4A90061FB44 /* GenresListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710423C1FFBE4A90061FB44 /* GenresListVC.swift */; };
 		6710423F1FFBE4B10061FB44 /* GenresListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6710423E1FFBE4B10061FB44 /* GenresListVC.storyboard */; };
+		671042411FFBE6FD0061FB44 /* OutputGetGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042401FFBE6FD0061FB44 /* OutputGetGenres.swift */; };
+		671042431FFBE7040061FB44 /* RequestGetGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042421FFBE7040061FB44 /* RequestGetGenres.swift */; };
+		671042451FFBE70D0061FB44 /* ResponseGetGenres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042441FFBE70D0061FB44 /* ResponseGetGenres.swift */; };
 		B11FD98A1FFB394200864A73 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD9891FFB394200864A73 /* ApiEndpoint.swift */; };
 		B11FD98C1FFB3B4A00864A73 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */; };
 		B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98D1FFB3BD900864A73 /* ApiUtils.swift */; };
@@ -50,6 +53,9 @@
 		6710423A1FFBE49B0061FB44 /* CompaniesListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompaniesListVC.storyboard; sourceTree = "<group>"; };
 		6710423C1FFBE4A90061FB44 /* GenresListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresListVC.swift; sourceTree = "<group>"; };
 		6710423E1FFBE4B10061FB44 /* GenresListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenresListVC.storyboard; sourceTree = "<group>"; };
+		671042401FFBE6FD0061FB44 /* OutputGetGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetGenres.swift; sourceTree = "<group>"; };
+		671042421FFBE7040061FB44 /* RequestGetGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetGenres.swift; sourceTree = "<group>"; };
+		671042441FFBE70D0061FB44 /* ResponseGetGenres.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetGenres.swift; sourceTree = "<group>"; };
 		AEE9B4EAAF79717B81B4BE01 /* Pods-VideogamesArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideogamesArchive.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideogamesArchive/Pods-VideogamesArchive.release.xcconfig"; sourceTree = "<group>"; };
 		B11FD9891FFB394200864A73 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -119,6 +125,9 @@
 		6710422F1FFBE3360061FB44 /* GetGenres */ = {
 			isa = PBXGroup;
 			children = (
+				671042401FFBE6FD0061FB44 /* OutputGetGenres.swift */,
+				671042421FFBE7040061FB44 /* RequestGetGenres.swift */,
+				671042441FFBE70D0061FB44 /* ResponseGetGenres.swift */,
 			);
 			path = GetGenres;
 			sourceTree = "<group>";
@@ -449,6 +458,7 @@
 				B11FD99A1FFB42DF00864A73 /* RequestGetGameEngines.swift in Sources */,
 				B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */,
 				6710422D1FFBE03A0061FB44 /* Logo.swift in Sources */,
+				671042411FFBE6FD0061FB44 /* OutputGetGenres.swift in Sources */,
 				B11FD9B91FFB4C0000864A73 /* OutputGetPlatforms.swift in Sources */,
 				6710423D1FFBE4A90061FB44 /* GenresListVC.swift in Sources */,
 				B11FD9BB1FFB4C0900864A73 /* RequestGetPlatforms.swift in Sources */,
@@ -461,12 +471,14 @@
 				671042351FFBE4200061FB44 /* ResponseGetCompanies.swift in Sources */,
 				671042391FFBE4930061FB44 /* CompaniesListVC.swift in Sources */,
 				B11FD9AD1FFB485C00864A73 /* EnginesListVC.swift in Sources */,
+				671042431FFBE7040061FB44 /* RequestGetGenres.swift in Sources */,
 				B11FD9BD1FFB4C1400864A73 /* ResponseGetPlatforms.swift in Sources */,
 				B11FD9A41FFB472200864A73 /* UIViewController+Load.swift in Sources */,
 				B11FD9B21FFB49A100864A73 /* PlatformListVC.swift in Sources */,
 				B11FD9A21FFB470E00864A73 /* UICollectionView+Load.swift in Sources */,
 				B11FD9A01FFB46D000864A73 /* UITableView+Load.swift in Sources */,
 				671042311FFBE3990061FB44 /* OutputGetCompanies.swift in Sources */,
+				671042451FFBE70D0061FB44 /* ResponseGetGenres.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

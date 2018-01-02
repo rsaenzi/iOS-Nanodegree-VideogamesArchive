@@ -13,15 +13,14 @@ class GenresListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        RequestGetGenres.request { response in
-//            switch response {
-//
-//            case .success(let output):
-//                print("RequestGetGenres: Success!")
-//            default:
-//                print("RequestGetGenres: Error")
-//            }
-//        }
+        RequestGetGenres.request { response in
+            switch response {
+                
+            case .success(let output):
+                print("RequestGetGenres: Success!")
+            default:
+                print("RequestGetGenres: Error")
+            }
+        }
     }
 }
-
