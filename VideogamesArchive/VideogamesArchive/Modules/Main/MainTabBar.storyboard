@@ -17,7 +17,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Fm-j8-cE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="510" y="214"/>
+            <point key="canvasLocation" x="410" y="321"/>
         </scene>
         <!--PlatformListVC-->
         <scene sceneID="G90-eV-ADX">
@@ -27,7 +27,27 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kz5-aN-RHq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="512" y="378"/>
+            <point key="canvasLocation" x="413" y="397"/>
+        </scene>
+        <!--CompaniesListVC-->
+        <scene sceneID="Ddg-OM-84f">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CompaniesListVC" id="U1S-Tp-CJa" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="VTi-ce-YF7"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DOg-U1-J1T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="467"/>
+        </scene>
+        <!--GenresListVC-->
+        <scene sceneID="DPl-xB-c3Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GenresListVC" id="X8N-Vl-1mI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="lv3-nb-aXi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04j-pY-Mt6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="406" y="550"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="og5-Fe-ZER">
@@ -41,6 +61,8 @@
                     <connections>
                         <segue destination="j9h-NT-fLQ" kind="relationship" relationship="viewControllers" id="vEM-Iy-9Ov"/>
                         <segue destination="edk-25-25v" kind="relationship" relationship="viewControllers" id="8Dm-t1-1sP"/>
+                        <segue destination="U1S-Tp-CJa" kind="relationship" relationship="viewControllers" id="3fB-WK-ahE"/>
+                        <segue destination="X8N-Vl-1mI" kind="relationship" relationship="viewControllers" id="S4T-GO-xKG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0P-On-5WV" userLabel="First Responder" sceneMemberID="firstResponder"/>

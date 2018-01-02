@@ -24,13 +24,19 @@ extension ApiEndpoint: TargetType {
             
         case .getPlatforms:
             return "/platforms/"
+            
+        case .getCompanies:
+            return "/companies/"
+            
+        case .getGenres:
+            return "/genres/"
         }
     }
     
     var method: Method {
         switch self {
             
-        case .getGameEngines, .getPlatforms:
+        case .getGameEngines, .getPlatforms, .getCompanies, .getGenres:
             return .get
         }
     }
@@ -45,7 +51,7 @@ extension ApiEndpoint: TargetType {
     var task: Task {
         switch self {
             
-        case .getGameEngines, .getPlatforms:
+        case .getGameEngines, .getPlatforms, .getCompanies, .getGenres:
             let urlParameters: [String: Any] = ["fields": "*"]
             return .requestParameters(parameters: urlParameters, encoding: URLEncoding.queryString)
         }

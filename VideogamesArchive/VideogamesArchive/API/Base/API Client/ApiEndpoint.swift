@@ -7,6 +7,10 @@
 //
 
 enum ApiEndpoint {
+    
+    // Main Filters
     case getGameEngines
     case getPlatforms
+    case getCompanies
+    case getGenres
 }

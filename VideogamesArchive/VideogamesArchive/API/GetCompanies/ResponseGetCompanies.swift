@@ -1,17 +1,17 @@
 //
-//  ResponseGetPlatforms.swift
+//  ResponseGetCompanies.swift
 //  VideogamesArchive
 //
-//  Created by Rigoberto Sáenz Imbacuán on 1/2/18.
+//  Created by Rigoberto Saenz on 1/2/18.
 //  Copyright © 2018 Rigoberto Sáenz Imbacuán. All rights reserved.
 //
 
 import Moya
 
-enum ResponseGetPlatforms {
+enum ResponseGetCompanies {
     
     // Specific Responses
-    case success(output: [OutputGetPlatforms])
+    case success(output: [OutputGetCompanies])
     
     // Status Code Errors
     case invalidStatusCode(statusCode: Int)

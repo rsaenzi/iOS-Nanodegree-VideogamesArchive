@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		6710422D1FFBE03A0061FB44 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710422C1FFBE03A0061FB44 /* Logo.swift */; };
+		671042311FFBE3990061FB44 /* OutputGetCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042301FFBE3990061FB44 /* OutputGetCompanies.swift */; };
+		671042331FFBE4180061FB44 /* RequestGetCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042321FFBE4180061FB44 /* RequestGetCompanies.swift */; };
+		671042351FFBE4200061FB44 /* ResponseGetCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042341FFBE4200061FB44 /* ResponseGetCompanies.swift */; };
+		671042391FFBE4930061FB44 /* CompaniesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042381FFBE4930061FB44 /* CompaniesListVC.swift */; };
+		6710423B1FFBE49B0061FB44 /* CompaniesListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6710423A1FFBE49B0061FB44 /* CompaniesListVC.storyboard */; };
+		6710423D1FFBE4A90061FB44 /* GenresListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710423C1FFBE4A90061FB44 /* GenresListVC.swift */; };
+		6710423F1FFBE4B10061FB44 /* GenresListVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6710423E1FFBE4B10061FB44 /* GenresListVC.storyboard */; };
 		B11FD98A1FFB394200864A73 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD9891FFB394200864A73 /* ApiEndpoint.swift */; };
 		B11FD98C1FFB3B4A00864A73 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */; };
 		B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98D1FFB3BD900864A73 /* ApiUtils.swift */; };
@@ -36,6 +43,13 @@
 /* Begin PBXFileReference section */
 		0D163594FB31CFCC017B7985 /* Pods_VideogamesArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideogamesArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6710422C1FFBE03A0061FB44 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
+		671042301FFBE3990061FB44 /* OutputGetCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputGetCompanies.swift; sourceTree = "<group>"; };
+		671042321FFBE4180061FB44 /* RequestGetCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestGetCompanies.swift; sourceTree = "<group>"; };
+		671042341FFBE4200061FB44 /* ResponseGetCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGetCompanies.swift; sourceTree = "<group>"; };
+		671042381FFBE4930061FB44 /* CompaniesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListVC.swift; sourceTree = "<group>"; };
+		6710423A1FFBE49B0061FB44 /* CompaniesListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CompaniesListVC.storyboard; sourceTree = "<group>"; };
+		6710423C1FFBE4A90061FB44 /* GenresListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresListVC.swift; sourceTree = "<group>"; };
+		6710423E1FFBE4B10061FB44 /* GenresListVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenresListVC.storyboard; sourceTree = "<group>"; };
 		AEE9B4EAAF79717B81B4BE01 /* Pods-VideogamesArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideogamesArchive.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideogamesArchive/Pods-VideogamesArchive.release.xcconfig"; sourceTree = "<group>"; };
 		B11FD9891FFB394200864A73 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -92,6 +106,41 @@
 			path = SharedModels;
 			sourceTree = "<group>";
 		};
+		6710422E1FFBE3260061FB44 /* GetCompanies */ = {
+			isa = PBXGroup;
+			children = (
+				671042301FFBE3990061FB44 /* OutputGetCompanies.swift */,
+				671042321FFBE4180061FB44 /* RequestGetCompanies.swift */,
+				671042341FFBE4200061FB44 /* ResponseGetCompanies.swift */,
+			);
+			path = GetCompanies;
+			sourceTree = "<group>";
+		};
+		6710422F1FFBE3360061FB44 /* GetGenres */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GetGenres;
+			sourceTree = "<group>";
+		};
+		671042361FFBE45D0061FB44 /* CompaniesList */ = {
+			isa = PBXGroup;
+			children = (
+				671042381FFBE4930061FB44 /* CompaniesListVC.swift */,
+				6710423A1FFBE49B0061FB44 /* CompaniesListVC.storyboard */,
+			);
+			path = CompaniesList;
+			sourceTree = "<group>";
+		};
+		671042371FFBE46D0061FB44 /* GenresList */ = {
+			isa = PBXGroup;
+			children = (
+				6710423C1FFBE4A90061FB44 /* GenresListVC.swift */,
+				6710423E1FFBE4B10061FB44 /* GenresListVC.storyboard */,
+			);
+			path = GenresList;
+			sourceTree = "<group>";
+		};
 		A5E88D8AB841D844EC73D94D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,10 +153,11 @@
 		B11FD9881FFB393600864A73 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				6710422B1FFBE02F0061FB44 /* SharedModels */,
 				B11FD9B71FFB4BE700864A73 /* Base */,
 				B11FD9941FFB425C00864A73 /* GetGameEngines */,
 				B11FD9B61FFB4BDD00864A73 /* GetPlatforms */,
+				6710422E1FFBE3260061FB44 /* GetCompanies */,
+				6710422F1FFBE3360061FB44 /* GetGenres */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -138,6 +188,8 @@
 				B11FD9A51FFB476500864A73 /* Main */,
 				B11FD9AB1FFB483600864A73 /* EnginesList */,
 				B11FD9B01FFB498C00864A73 /* PlatformList */,
+				671042361FFBE45D0061FB44 /* CompaniesList */,
+				671042371FFBE46D0061FB44 /* GenresList */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -186,14 +238,14 @@
 			path = PlatformList;
 			sourceTree = "<group>";
 		};
-		B11FD9B51FFB4B1C00864A73 /* Client */ = {
+		B11FD9B51FFB4B1C00864A73 /* API Client */ = {
 			isa = PBXGroup;
 			children = (
 				B11FD9891FFB394200864A73 /* ApiEndpoint.swift */,
 				B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */,
 				B11FD98D1FFB3BD900864A73 /* ApiUtils.swift */,
 			);
-			path = Client;
+			path = "API Client";
 			sourceTree = "<group>";
 		};
 		B11FD9B61FFB4BDD00864A73 /* GetPlatforms */ = {
@@ -209,7 +261,8 @@
 		B11FD9B71FFB4BE700864A73 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				B11FD9B51FFB4B1C00864A73 /* Client */,
+				B11FD9B51FFB4B1C00864A73 /* API Client */,
+				6710422B1FFBE02F0061FB44 /* SharedModels */,
 				B11FD98F1FFB419100864A73 /* GenericRequest */,
 			);
 			path = Base;
@@ -309,8 +362,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B11FD9B41FFB49A800864A73 /* PlatformListVC.storyboard in Resources */,
+				6710423B1FFBE49B0061FB44 /* CompaniesListVC.storyboard in Resources */,
 				B16C9CF21FFB2F5F0004652E /* LaunchScreen.storyboard in Resources */,
 				B11FD9AF1FFB487100864A73 /* EnginesListVC.storyboard in Resources */,
+				6710423F1FFBE4B10061FB44 /* GenresListVC.storyboard in Resources */,
 				B11FD9A91FFB478600864A73 /* MainTabBar.storyboard in Resources */,
 				B16C9CEF1FFB2F5F0004652E /* Assets.xcassets in Resources */,
 			);
@@ -395,18 +450,23 @@
 				B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */,
 				6710422D1FFBE03A0061FB44 /* Logo.swift in Sources */,
 				B11FD9B91FFB4C0000864A73 /* OutputGetPlatforms.swift in Sources */,
+				6710423D1FFBE4A90061FB44 /* GenresListVC.swift in Sources */,
 				B11FD9BB1FFB4C0900864A73 /* RequestGetPlatforms.swift in Sources */,
 				B11FD9911FFB41CF00864A73 /* RequestApi.swift in Sources */,
+				671042331FFBE4180061FB44 /* RequestGetCompanies.swift in Sources */,
 				B11FD9981FFB42D200864A73 /* OutputGetGameEngines.swift in Sources */,
 				B11FD99C1FFB42EF00864A73 /* ResponseGetGameEngines.swift in Sources */,
 				B16C9CE81FFB2F5F0004652E /* AppDelegate.swift in Sources */,
 				B11FD98A1FFB394200864A73 /* ApiEndpoint.swift in Sources */,
+				671042351FFBE4200061FB44 /* ResponseGetCompanies.swift in Sources */,
+				671042391FFBE4930061FB44 /* CompaniesListVC.swift in Sources */,
 				B11FD9AD1FFB485C00864A73 /* EnginesListVC.swift in Sources */,
 				B11FD9BD1FFB4C1400864A73 /* ResponseGetPlatforms.swift in Sources */,
 				B11FD9A41FFB472200864A73 /* UIViewController+Load.swift in Sources */,
 				B11FD9B21FFB49A100864A73 /* PlatformListVC.swift in Sources */,
 				B11FD9A21FFB470E00864A73 /* UICollectionView+Load.swift in Sources */,
 				B11FD9A01FFB46D000864A73 /* UITableView+Load.swift in Sources */,
+				671042311FFBE3990061FB44 /* OutputGetCompanies.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
