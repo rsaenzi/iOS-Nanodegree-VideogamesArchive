@@ -51,15 +51,14 @@ extension EnginesListVC: UITableViewDataSource {
             cell.engineImage.image = #imageLiteral(resourceName: "GameEngines")
         }
         
-        cell.engineName.text = item.name
-        cell.engineURL.setTitle(item.url, for: .normal)
-        
         if let companies = item.companiesIds, let platforms = item.platformsIds {
             cell.engineDescription.text = "Used by \(companies.count) companies on \(platforms.count) platforms"
         } else {
             cell.engineDescription.text = ""
         }
         
+        cell.engineName.text = item.name
+        cell.engineURL.text = item.url
         return cell
     }
 }
@@ -67,7 +66,7 @@ extension EnginesListVC: UITableViewDataSource {
 extension EnginesListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 110
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

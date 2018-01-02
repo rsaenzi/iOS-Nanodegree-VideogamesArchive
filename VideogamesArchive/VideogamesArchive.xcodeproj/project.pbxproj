@@ -21,6 +21,7 @@
 		671042471FFBEC860061FB44 /* EnginesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042461FFBEC860061FB44 /* EnginesListCell.swift */; };
 		6710424A1FFBED7F0061FB44 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671042491FFBED7F0061FB44 /* Model.swift */; };
 		6710424C1FFBEE5D0061FB44 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710424B1FFBEE5D0061FB44 /* UIViewController+Alert.swift */; };
+		6710424E1FFC07F30061FB44 /* PlatformListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710424D1FFC07F30061FB44 /* PlatformListCell.swift */; };
 		B11FD98A1FFB394200864A73 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD9891FFB394200864A73 /* ApiEndpoint.swift */; };
 		B11FD98C1FFB3B4A00864A73 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */; };
 		B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98D1FFB3BD900864A73 /* ApiUtils.swift */; };
@@ -62,6 +63,7 @@
 		671042461FFBEC860061FB44 /* EnginesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnginesListCell.swift; sourceTree = "<group>"; };
 		671042491FFBED7F0061FB44 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		6710424B1FFBEE5D0061FB44 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		6710424D1FFC07F30061FB44 /* PlatformListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformListCell.swift; sourceTree = "<group>"; };
 		AEE9B4EAAF79717B81B4BE01 /* Pods-VideogamesArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideogamesArchive.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideogamesArchive/Pods-VideogamesArchive.release.xcconfig"; sourceTree = "<group>"; };
 		B11FD9891FFB394200864A73 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			children = (
 				B11FD9B11FFB49A100864A73 /* PlatformListVC.swift */,
 				B11FD9B31FFB49A800864A73 /* PlatformListVC.storyboard */,
+				6710424D1FFC07F30061FB44 /* PlatformListCell.swift */,
 			);
 			path = PlatformList;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				B11FD9A41FFB472200864A73 /* UIViewController+Load.swift in Sources */,
 				B11FD9B21FFB49A100864A73 /* PlatformListVC.swift in Sources */,
 				B11FD9A21FFB470E00864A73 /* UICollectionView+Load.swift in Sources */,
+				6710424E1FFC07F30061FB44 /* PlatformListCell.swift in Sources */,
 				B11FD9A01FFB46D000864A73 /* UITableView+Load.swift in Sources */,
 				671042311FFBE3990061FB44 /* OutputGetCompanies.swift in Sources */,
 				671042451FFBE70D0061FB44 /* ResponseGetGenres.swift in Sources */,

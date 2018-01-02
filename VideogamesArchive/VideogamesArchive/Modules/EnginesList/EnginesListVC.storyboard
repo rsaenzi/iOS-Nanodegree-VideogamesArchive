@@ -23,70 +23,68 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EnginesListCell" rowHeight="143" id="eSB-Wb-Nsg" customClass="EnginesListCell" customModule="VideogamesArchive" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="143"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EnginesListCell" rowHeight="109" id="eSB-Wb-Nsg" customClass="EnginesListCell" customModule="VideogamesArchive" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eSB-Wb-Nsg" id="vNI-Aj-YOh">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="142.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="108.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lPb-Ko-eaI">
-                                                    <rect key="frame" x="8" y="8" width="126.5" height="126.5"/>
+                                                    <rect key="frame" x="8" y="8" width="92.5" height="92.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="lPb-Ko-eaI" secondAttribute="height" multiplier="1:1" id="1Wm-UD-tkc"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGW-bU-KRs">
-                                                    <rect key="frame" x="142.5" y="8" width="199.5" height="21"/>
+                                                    <rect key="frame" x="108.5" y="8" width="233.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mwq-V3-TCZ">
-                                                    <rect key="frame" x="142" y="29" width="200" height="30"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="sqm-Sd-ICD"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <state key="normal" title="URL">
-                                                        <color key="titleColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </state>
-                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Used on X platforms by X companies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="5bY-9l-xkC">
-                                                    <rect key="frame" x="143" y="59" width="199" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="109" y="55" width="233" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Games" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kUS-Zn-Zhf">
-                                                    <rect key="frame" x="278" y="120" width="64" height="14.5"/>
+                                                    <rect key="frame" x="278" y="86" width="64" height="14.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="UGV-Bl-Ebl">
+                                                    <rect key="frame" x="109" y="29" width="233" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Mwq-V3-TCZ" firstAttribute="top" secondItem="RGW-bU-KRs" secondAttribute="bottom" id="0Df-sb-hoh"/>
+                                                <constraint firstAttribute="trailing" secondItem="5bY-9l-xkC" secondAttribute="trailing" id="7Ni-b3-wm5"/>
                                                 <constraint firstAttribute="trailing" secondItem="kUS-Zn-Zhf" secondAttribute="trailing" id="AcD-qL-eHs"/>
-                                                <constraint firstAttribute="trailing" secondItem="Mwq-V3-TCZ" secondAttribute="trailing" id="AnQ-9P-fx1"/>
                                                 <constraint firstItem="lPb-Ko-eaI" firstAttribute="leading" secondItem="vNI-Aj-YOh" secondAttribute="leading" constant="8" id="AzF-TL-q1F"/>
-                                                <constraint firstItem="5bY-9l-xkC" firstAttribute="top" secondItem="Mwq-V3-TCZ" secondAttribute="bottom" id="HQz-Kr-kg2"/>
                                                 <constraint firstAttribute="bottom" secondItem="kUS-Zn-Zhf" secondAttribute="bottom" constant="8" id="Ktk-xt-0wi"/>
                                                 <constraint firstAttribute="bottom" secondItem="lPb-Ko-eaI" secondAttribute="bottom" constant="8" id="PS6-cj-NlG"/>
                                                 <constraint firstItem="RGW-bU-KRs" firstAttribute="leading" secondItem="lPb-Ko-eaI" secondAttribute="trailing" constant="8" id="YyF-yo-GgJ"/>
                                                 <constraint firstItem="RGW-bU-KRs" firstAttribute="top" secondItem="vNI-Aj-YOh" secondAttribute="top" constant="8" id="awk-kQ-j6g"/>
-                                                <constraint firstItem="Mwq-V3-TCZ" firstAttribute="leading" secondItem="lPb-Ko-eaI" secondAttribute="trailing" constant="8" id="ebL-ID-TrF"/>
+                                                <constraint firstAttribute="trailing" secondItem="UGV-Bl-Ebl" secondAttribute="trailing" id="bgV-0M-zSP"/>
+                                                <constraint firstItem="5bY-9l-xkC" firstAttribute="leading" secondItem="lPb-Ko-eaI" secondAttribute="trailing" constant="8" id="c5N-jC-16z"/>
                                                 <constraint firstItem="5bY-9l-xkC" firstAttribute="leading" secondItem="lPb-Ko-eaI" secondAttribute="trailing" constant="8" id="gjW-cC-xGV"/>
+                                                <constraint firstItem="UGV-Bl-Ebl" firstAttribute="top" secondItem="RGW-bU-KRs" secondAttribute="bottom" id="kpG-qB-EtO"/>
+                                                <constraint firstItem="5bY-9l-xkC" firstAttribute="top" secondItem="UGV-Bl-Ebl" secondAttribute="bottom" constant="8" id="lzU-YX-dzC"/>
                                                 <constraint firstAttribute="trailing" secondItem="RGW-bU-KRs" secondAttribute="trailing" id="oaf-vA-Rd8"/>
                                                 <constraint firstAttribute="trailing" secondItem="5bY-9l-xkC" secondAttribute="trailing" id="pZf-pO-axL"/>
                                                 <constraint firstItem="lPb-Ko-eaI" firstAttribute="top" secondItem="vNI-Aj-YOh" secondAttribute="top" constant="8" id="tFm-tc-ALG"/>
+                                                <constraint firstItem="UGV-Bl-Ebl" firstAttribute="leading" secondItem="lPb-Ko-eaI" secondAttribute="trailing" constant="8" id="zjY-Pr-icJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="engineDescription" destination="5bY-9l-xkC" id="zUB-V8-lw5"/>
                                             <outlet property="engineImage" destination="lPb-Ko-eaI" id="vfw-6T-RvJ"/>
                                             <outlet property="engineName" destination="RGW-bU-KRs" id="HIN-ui-5Fa"/>
-                                            <outlet property="engineURL" destination="Mwq-V3-TCZ" id="vwt-gv-XmV"/>
+                                            <outlet property="engineURL" destination="UGV-Bl-Ebl" id="5DY-IZ-osI"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
