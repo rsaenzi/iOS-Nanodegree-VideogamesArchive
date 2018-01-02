@@ -39,6 +39,10 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="33W-kf-OGf" id="Cne-HZ-y16"/>
+                                    <outlet property="delegate" destination="33W-kf-OGf" id="E4G-ee-vsm"/>
+                                </connections>
                             </collectionView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconSwipeLeftBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-bu-RmQ">
                                 <rect key="frame" x="301" y="24" width="50" height="50"/>
@@ -61,6 +65,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Game Gallery" id="kxV-pQ-UPP"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="collection" destination="iTc-m5-MQW" id="r4H-oC-OgK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JYj-HI-OlZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
