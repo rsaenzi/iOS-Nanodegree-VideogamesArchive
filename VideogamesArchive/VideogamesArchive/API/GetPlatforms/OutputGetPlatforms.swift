@@ -6,4 +6,27 @@
 //  Copyright © 2018 Rigoberto Sáenz Imbacuán. All rights reserved.
 //
 
-import Foundation
+struct OutputGetPlatforms: Codable {
+    let id: Int
+    let name: String
+    let logo: Logo?
+    let slug: String
+    let url: String
+    let website: String?
+    let summary: String?
+    let alternativeName: String?
+    let gamesIds: [Int]
+    
+    // MARK: Decoding & Encoding to JSON
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case logo
+        case slug
+        case url
+        case website
+        case summary
+        case alternativeName = "alternative_name"
+        case gamesIds = "games"
+    }
+}

@@ -9,5 +9,6 @@ target 'VideogamesArchive' do
   pod 'Moya'
   pod 'Kingfisher'
   pod 'KVNProgress'
+  pod 'RealmSwift'
 
 end

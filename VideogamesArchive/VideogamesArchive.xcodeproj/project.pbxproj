@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6710422D1FFBE03A0061FB44 /* Logo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6710422C1FFBE03A0061FB44 /* Logo.swift */; };
 		B11FD98A1FFB394200864A73 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD9891FFB394200864A73 /* ApiEndpoint.swift */; };
 		B11FD98C1FFB3B4A00864A73 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */; };
 		B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11FD98D1FFB3BD900864A73 /* ApiUtils.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		0D163594FB31CFCC017B7985 /* Pods_VideogamesArchive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideogamesArchive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6710422C1FFBE03A0061FB44 /* Logo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logo.swift; sourceTree = "<group>"; };
 		AEE9B4EAAF79717B81B4BE01 /* Pods-VideogamesArchive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideogamesArchive.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideogamesArchive/Pods-VideogamesArchive.release.xcconfig"; sourceTree = "<group>"; };
 		B11FD9891FFB394200864A73 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
 		B11FD98B1FFB3B4A00864A73 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6710422B1FFBE02F0061FB44 /* SharedModels */ = {
+			isa = PBXGroup;
+			children = (
+				6710422C1FFBE03A0061FB44 /* Logo.swift */,
+			);
+			path = SharedModels;
+			sourceTree = "<group>";
+		};
 		A5E88D8AB841D844EC73D94D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +104,10 @@
 		B11FD9881FFB393600864A73 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				6710422B1FFBE02F0061FB44 /* SharedModels */,
 				B11FD9B71FFB4BE700864A73 /* Base */,
-				B11FD9B61FFB4BDD00864A73 /* GetPlatforms */,
 				B11FD9941FFB425C00864A73 /* GetGameEngines */,
+				B11FD9B61FFB4BDD00864A73 /* GetPlatforms */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -352,6 +363,8 @@
 				"${BUILT_PRODUCTS_DIR}/KVNProgress/KVNProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -360,6 +373,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KVNProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,6 +393,7 @@
 				B11FD98C1FFB3B4A00864A73 /* ApiManager.swift in Sources */,
 				B11FD99A1FFB42DF00864A73 /* RequestGetGameEngines.swift in Sources */,
 				B11FD98E1FFB3BD900864A73 /* ApiUtils.swift in Sources */,
+				6710422D1FFBE03A0061FB44 /* Logo.swift in Sources */,
 				B11FD9B91FFB4C0000864A73 /* OutputGetPlatforms.swift in Sources */,
 				B11FD9BB1FFB4C0900864A73 /* RequestGetPlatforms.swift in Sources */,
 				B11FD9911FFB41CF00864A73 /* RequestApi.swift in Sources */,

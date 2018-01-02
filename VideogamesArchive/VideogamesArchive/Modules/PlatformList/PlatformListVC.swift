@@ -13,7 +13,15 @@ class PlatformListVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        RequestGetPlatforms.request { response in
+            switch response {
+                
+            case .success(let output):
+                print("RequestGetPlatforms: Success!")
+            default:
+                print("RequestGetPlatforms: Error")
+            }
+        }
     }
 
 }

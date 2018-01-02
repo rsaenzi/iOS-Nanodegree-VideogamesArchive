@@ -7,20 +7,28 @@ PODS:
   - Moya/Core (10.0.1):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
+  - Realm (3.0.2):
+    - Realm/Headers (= 3.0.2)
+  - Realm/Headers (3.0.2)
+  - RealmSwift (3.0.2):
+    - Realm (= 3.0.2)
   - Result (3.2.4)
 
 DEPENDENCIES:
   - Kingfisher
   - KVNProgress
   - Moya
+  - RealmSwift
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
   KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
   Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
+  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
+  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
 
-PODFILE CHECKSUM: 557fd0399e5bc2ca2c780b5a311843283ece5362
+PODFILE CHECKSUM: 0e252ad8f148da56d64a59bb9e7b420ec1117c2e
 
 COCOAPODS: 1.3.1

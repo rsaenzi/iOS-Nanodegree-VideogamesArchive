@@ -17,9 +17,9 @@ class EnginesListVC: UIViewController {
             switch response {
                 
             case .success(let output):
-                print("Success!")
+                print("RequestGetGameEngines: Success!")
             default:
-                print("Error")
+                print("RequestGetGameEngines: Error")
             }
         }
     }

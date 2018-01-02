@@ -28,7 +28,3 @@ struct OutputGetGameEngines: Codable {
         case companiesIds = "companies"
     }
 }
-
-struct Logo: Codable {
-    let url: String
-}

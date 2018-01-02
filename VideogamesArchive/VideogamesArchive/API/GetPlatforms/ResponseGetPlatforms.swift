@@ -6,4 +6,23 @@
 //  Copyright © 2018 Rigoberto Sáenz Imbacuán. All rights reserved.
 //
 
-import Foundation
+import Moya
+
+enum ResponseGetPlatforms {
+    
+    // Specific Responses
+    case success(output: [OutputGetPlatforms])
+    
+    // Status Code Errors
+    case invalidStatusCode(statusCode: Int)
+    case httpRedirectionError(statusCode: Int)
+    case httpClientError(statusCode: Int)
+    case httpServerError(statusCode: Int)
+    
+    // Request Errors
+    case resultDataError(response: Moya.Response)
+    case jsonDecodingError(jsonString: String)
+    case requestFailure(reason: String)
+    case noInternet
+}
+
