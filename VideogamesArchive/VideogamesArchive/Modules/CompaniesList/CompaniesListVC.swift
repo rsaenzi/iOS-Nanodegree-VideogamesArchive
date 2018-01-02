@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import KVNProgress
 
 class CompaniesListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        RequestGetCompanies.request { response in
+        KVNProgress.show()
+        RequestGetCompanies.request { [weak self] response in
+            
+            KVNProgress.dismiss()
             switch response {
                 
             case .success(let output):
                 print("RequestGetCompanies: Success!")
+                Model.shared.companies = output
+                
             default:
-                print("RequestGetCompanies: Error")
+                self?.showSimpleAlert(title: "Error", message: "Error when trying to fetch all the Companies")
             }
         }
     }

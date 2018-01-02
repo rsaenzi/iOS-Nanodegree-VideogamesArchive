@@ -7,21 +7,26 @@
 //
 
 import UIKit
+import KVNProgress
 
 class PlatformListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        RequestGetPlatforms.request { response in
+        KVNProgress.show()
+        RequestGetPlatforms.request { [weak self] response in
+            
+            KVNProgress.dismiss()
             switch response {
                 
             case .success(let output):
                 print("RequestGetPlatforms: Success!")
+                Model.shared.platforms = output
+                
             default:
-                print("RequestGetPlatforms: Error")
+                self?.showSimpleAlert(title: "Error", message: "Error when trying to fetch all the Platforms")
             }
         }
     }
-
 }

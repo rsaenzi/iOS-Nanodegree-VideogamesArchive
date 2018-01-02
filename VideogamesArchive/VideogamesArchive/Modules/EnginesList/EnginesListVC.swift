@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import KVNProgress
 
 class EnginesListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        RequestGetGameEngines.request { response in
+        KVNProgress.show()
+        RequestGetGameEngines.request { [weak self] response in
+            
+            KVNProgress.dismiss()
             switch response {
                 
             case .success(let output):
                 print("RequestGetGameEngines: Success!")
+                Model.shared.engines = output
+                
             default:
-                print("RequestGetGameEngines: Error")
+                self?.showSimpleAlert(title: "Error", message: "Error when trying to fetch all the Game Engines")
             }
         }
     }

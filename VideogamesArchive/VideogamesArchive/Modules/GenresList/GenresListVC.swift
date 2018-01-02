@@ -7,19 +7,25 @@
 //
 
 import UIKit
+import KVNProgress
 
 class GenresListVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        RequestGetGenres.request { response in
+        KVNProgress.show()
+        RequestGetGenres.request { [weak self] response in
+            
+            KVNProgress.dismiss()
             switch response {
                 
             case .success(let output):
                 print("RequestGetGenres: Success!")
+                Model.shared.genres = output
+                
             default:
-                print("RequestGetGenres: Error")
+                self?.showSimpleAlert(title: "Error", message: "Error when trying to fetch all the Genres")
             }
         }
     }
