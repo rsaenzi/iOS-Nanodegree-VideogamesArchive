@@ -9,9 +9,8 @@
 import UIKit
 
 class GenresListCell: UITableViewCell {
-//    @IBOutlet weak var genreImage: UIImageView!
-//    @IBOutlet weak var genreName: UILabel!
-//    @IBOutlet weak var genreURL: UILabel!
-//    @IBOutlet weak var genreDescription: UILabel!
+    @IBOutlet weak var genreName: UILabel!
+    @IBOutlet weak var genreURL: UILabel!
+    @IBOutlet weak var genreGames: UILabel!
 }
 

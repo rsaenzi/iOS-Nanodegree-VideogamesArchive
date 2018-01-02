@@ -53,7 +53,7 @@ extension PlatformListVC: UITableViewDataSource {
         
         cell.platformName.text = item.name
         cell.platformURL.text = item.url
-        cell.platformDescription.text = item.summary
+//        cell.platformDescription.text = item.summary
         return cell
     }
 }
@@ -61,7 +61,7 @@ extension PlatformListVC: UITableViewDataSource {
 extension PlatformListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 80
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

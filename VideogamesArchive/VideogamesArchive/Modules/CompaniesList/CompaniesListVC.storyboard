@@ -31,7 +31,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="me9-dw-031">
                                                     <rect key="frame" x="16" y="8" width="318" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -47,9 +47,16 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Games" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJQ-0f-hiB">
+                                                    <rect key="frame" x="278" y="76" width="64" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="u1d-DY-YNG" firstAttribute="leading" secondItem="aOu-I7-2PY" secondAttribute="leading" constant="16" id="6Am-W7-bq0"/>
+                                                <constraint firstAttribute="bottom" secondItem="BJQ-0f-hiB" secondAttribute="bottom" constant="8" id="8DW-Rm-jQt"/>
                                                 <constraint firstItem="me9-dw-031" firstAttribute="leading" secondItem="aOu-I7-2PY" secondAttribute="leading" constant="16" id="ABo-0X-j7Y"/>
                                                 <constraint firstItem="u1d-DY-YNG" firstAttribute="top" secondItem="yOB-vC-W41" secondAttribute="bottom" constant="8" id="DlP-Zr-gm9"/>
                                                 <constraint firstItem="yOB-vC-W41" firstAttribute="top" secondItem="me9-dw-031" secondAttribute="bottom" id="E9C-cg-afj"/>
@@ -58,6 +65,7 @@
                                                 <constraint firstAttribute="trailing" secondItem="yOB-vC-W41" secondAttribute="trailing" constant="8" id="Zax-Wf-uTr"/>
                                                 <constraint firstAttribute="trailing" secondItem="me9-dw-031" secondAttribute="trailing" constant="8" id="be6-gR-mss"/>
                                                 <constraint firstItem="yOB-vC-W41" firstAttribute="leading" secondItem="aOu-I7-2PY" secondAttribute="leading" constant="16" id="gLO-1f-h3O"/>
+                                                <constraint firstAttribute="trailing" secondItem="BJQ-0f-hiB" secondAttribute="trailing" id="sb6-Qd-MJa"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

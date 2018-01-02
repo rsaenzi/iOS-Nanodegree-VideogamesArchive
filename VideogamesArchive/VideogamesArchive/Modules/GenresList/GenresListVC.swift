@@ -43,16 +43,9 @@ extension GenresListVC: UITableViewDataSource {
         
         let item = Model.shared.genres[indexPath.row]
         let cell: GenresListCell = tableView.dequeue(indexPath)
-        
-//        if let link = item.logo?.url, let url = URL(string: "https:" + link) {
-//            cell.platformImage.kf.setImage(with: url, placeholder: #imageLiteral(resourceName: "SpinnerLoading"))
-//        } else {
-//            cell.platformImage.image = #imageLiteral(resourceName: "GameEngines")
-//        }
-//        
-//        cell.platformName.text = item.name
-//        cell.platformURL.text = item.url
-//        cell.platformDescription.text = item.summary
+        cell.genreName.text = item.name
+        cell.genreURL.text = item.url
+        cell.genreGames.text = "Games: \(item.gamesIds.count)"
         return cell
     }
 }
@@ -60,7 +53,7 @@ extension GenresListVC: UITableViewDataSource {
 extension GenresListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 90
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

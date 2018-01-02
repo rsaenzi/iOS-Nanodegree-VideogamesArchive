@@ -57,6 +57,15 @@ extension EnginesListVC: UITableViewDataSource {
             cell.engineDescription.text = ""
         }
         
+        var engineDescription = ""
+        if let companies = item.companiesIds {
+            engineDescription.append("Companies using it: \(companies.count)\n")
+        }
+        if let platforms = item.platformsIds {
+            engineDescription.append("Platforms using it: \(platforms.count)")
+        }
+        cell.engineDescription.text = engineDescription
+        
         cell.engineName.text = item.name
         cell.engineURL.text = item.url
         return cell
@@ -66,7 +75,7 @@ extension EnginesListVC: UITableViewDataSource {
 extension EnginesListVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 120
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

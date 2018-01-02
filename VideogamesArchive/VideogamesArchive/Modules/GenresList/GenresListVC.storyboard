@@ -21,19 +21,58 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OGv-c6-upU">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sNq-Hn-R5l">
-                                    <rect key="frame" x="0.0" y="72" width="375" height="554"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </tableView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GenresListCell" id="83n-en-OLf" customClass="GenresListCell" customModule="VideogamesArchive" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GenresListCell" rowHeight="94" id="83n-en-OLf" customClass="GenresListCell" customModule="VideogamesArchive" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="94"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="83n-en-OLf" id="nxh-mo-7hA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="93.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="See Games" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QIm-V9-Mtx">
+                                                    <rect key="frame" x="278" y="71" width="64" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="BJz-lK-ych">
+                                                    <rect key="frame" x="16" y="8" width="326" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meb-hX-op4">
+                                                    <rect key="frame" x="16" y="29" width="326" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Games" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IO9-Df-95u">
+                                                    <rect key="frame" x="16" y="55" width="326" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BJz-lK-ych" firstAttribute="top" secondItem="nxh-mo-7hA" secondAttribute="top" constant="8" id="5lU-Jm-uSd"/>
+                                                <constraint firstItem="meb-hX-op4" firstAttribute="top" secondItem="BJz-lK-ych" secondAttribute="bottom" id="FCg-7G-Iao"/>
+                                                <constraint firstAttribute="trailing" secondItem="IO9-Df-95u" secondAttribute="trailing" id="Ffh-0C-nfQ"/>
+                                                <constraint firstItem="BJz-lK-ych" firstAttribute="leading" secondItem="nxh-mo-7hA" secondAttribute="leading" constant="16" id="Fvw-ur-yVw"/>
+                                                <constraint firstAttribute="trailing" secondItem="BJz-lK-ych" secondAttribute="trailing" id="GpE-rw-1PY"/>
+                                                <constraint firstItem="meb-hX-op4" firstAttribute="leading" secondItem="nxh-mo-7hA" secondAttribute="leading" constant="16" id="Lbl-5o-0n5"/>
+                                                <constraint firstItem="IO9-Df-95u" firstAttribute="leading" secondItem="nxh-mo-7hA" secondAttribute="leading" constant="16" id="PhP-gb-ySS"/>
+                                                <constraint firstAttribute="trailing" secondItem="QIm-V9-Mtx" secondAttribute="trailing" id="gjB-pm-Qor"/>
+                                                <constraint firstAttribute="trailing" secondItem="meb-hX-op4" secondAttribute="trailing" id="k3f-Wm-XeJ"/>
+                                                <constraint firstItem="IO9-Df-95u" firstAttribute="top" secondItem="meb-hX-op4" secondAttribute="bottom" constant="8" id="qDK-8J-Noq"/>
+                                                <constraint firstAttribute="bottom" secondItem="QIm-V9-Mtx" secondAttribute="bottom" constant="8" id="vjY-uu-vOx"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="genreGames" destination="IO9-Df-95u" id="80U-mF-XcA"/>
+                                            <outlet property="genreName" destination="BJz-lK-ych" id="mhn-cx-p4k"/>
+                                            <outlet property="genreURL" destination="meb-hX-op4" id="BXN-QX-zlv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
