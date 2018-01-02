@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIApplication.shared.statusBarStyle = .lightContent
         UINavigationBar.appearance().tintColor = UIColor.white
         UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.9992868304, green: 0.1656406224, blue: 0.1659538746, alpha: 1)
+        
+        // Config for Kingfisher
+        ImageCache.default.maxDiskCacheSize = 0
+        ImageCache.default.maxCachePeriodInSecond = -1
+        ImageDownloader.default.downloadTimeout = 30.0
         
         return true
     }

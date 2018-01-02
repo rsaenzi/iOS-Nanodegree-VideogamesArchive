@@ -8,6 +8,10 @@
 
 import UIKit
 
-class EnginesListCell: UICollectionViewCell {
-    @IBOutlet weak var imageEngine: UIImageView!
+class EnginesListCell: UITableViewCell {
+    @IBOutlet weak var engineImage: UIImageView!
+    @IBOutlet weak var engineWaitingIcon: UIActivityIndicatorView!
+    @IBOutlet weak var engineName: UILabel!
+    @IBOutlet weak var engineURL: UIButton!
+    @IBOutlet weak var engineDescription: UILabel!
 }
