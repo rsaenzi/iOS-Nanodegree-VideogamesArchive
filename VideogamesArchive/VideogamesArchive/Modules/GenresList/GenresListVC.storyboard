@@ -17,10 +17,44 @@
                     <view key="view" contentMode="scaleToFill" id="VkF-gv-ieR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OGv-c6-upU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sNq-Hn-R5l">
+                                    <rect key="frame" x="0.0" y="72" width="375" height="554"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </tableView>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GenresListCell" id="83n-en-OLf" customClass="GenresListCell" customModule="VideogamesArchive" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="83n-en-OLf" id="nxh-mo-7hA">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="e4m-7W-VBD" id="0gj-ps-khc"/>
+                                    <outlet property="delegate" destination="e4m-7W-VBD" id="wgc-C8-THk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hGh-m9-vTv" firstAttribute="bottom" secondItem="OGv-c6-upU" secondAttribute="bottom" id="2V9-WC-fE8"/>
+                            <constraint firstItem="OGv-c6-upU" firstAttribute="top" secondItem="hGh-m9-vTv" secondAttribute="top" id="AeL-Cd-Ij6"/>
+                            <constraint firstItem="hGh-m9-vTv" firstAttribute="trailing" secondItem="OGv-c6-upU" secondAttribute="trailing" id="J1F-nP-iQG"/>
+                            <constraint firstItem="OGv-c6-upU" firstAttribute="leading" secondItem="hGh-m9-vTv" secondAttribute="leading" id="LNA-aj-GzU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hGh-m9-vTv"/>
                     </view>
                     <navigationItem key="navigationItem" title="Genres" id="37U-Ea-5A2"/>
+                    <connections>
+                        <outlet property="table" destination="OGv-c6-upU" id="fmU-0R-wjn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AYE-q6-9yM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

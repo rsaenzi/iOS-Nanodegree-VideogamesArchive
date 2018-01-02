@@ -9,8 +9,7 @@
 import UIKit
 
 class CompaniesListCell: UITableViewCell {
-//    @IBOutlet weak var companyImage: UIImageView!
-//    @IBOutlet weak var companyName: UILabel!
-//    @IBOutlet weak var companyURL: UILabel!
-//    @IBOutlet weak var companyDescription: UILabel!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var companyURL: UILabel!
+    @IBOutlet weak var companyGames: UILabel!
 }

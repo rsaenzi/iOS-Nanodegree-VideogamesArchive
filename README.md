@@ -2,11 +2,11 @@
 6th project created as exercise for the iOS Developer Nanodegree @ Udacity that I am enrolled to.
 
 ### App Description:
-* VideoGames Archive is an app that allows users to get info about your favorite videogames, you can browse them by Engines, Platforms, Companies and Genres.
+* VideoGames Archive is an app that allows users to get info about their favorite videogames, they can browse them by Engines, Platforms, Companies and Genres.
 
 ### Xcode Project Setup:
 1. Clone the project on your mac
-2. Install all the pod libraries (* See instructions below)
+2. Install all the pod libraries (*See instructions below)
 3. Open VideogamesArchive.xcworkspace file
 4. Select a Simulator, and hit RUN
 5. Enjoy!

@@ -188,6 +188,13 @@
 			path = GameGallery;
 			sourceTree = "<group>";
 		};
+		6710425A1FFC1B6E0061FB44 /* GetGameInfo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GetGameInfo;
+			sourceTree = "<group>";
+		};
 		A5E88D8AB841D844EC73D94D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +212,7 @@
 				B11FD9B61FFB4BDD00864A73 /* GetPlatforms */,
 				6710422E1FFBE3260061FB44 /* GetCompanies */,
 				6710422F1FFBE3360061FB44 /* GetGenres */,
+				6710425A1FFC1B6E0061FB44 /* GetGameInfo */,
 			);
 			path = API;
 			sourceTree = "<group>";
