@@ -15,5 +15,6 @@ class Model {
     var companies = [OutputGetCompanies]()
     var genres = [OutputGetGenres]()
     
+    var gameGalleryIds = [Int]()
     var gameGallery = [OutputGetGameInfo?]()
 }

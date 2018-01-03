@@ -67,7 +67,10 @@ extension CompaniesListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let item = Model.shared.companies[indexPath.row]
+        
         let screen: GameGalleryVC = loadViewController()
+        screen.gameIdsToLoad = item.developedGamesIds ?? []
         navigationController?.pushViewController(screen, animated: true)
     }
 }

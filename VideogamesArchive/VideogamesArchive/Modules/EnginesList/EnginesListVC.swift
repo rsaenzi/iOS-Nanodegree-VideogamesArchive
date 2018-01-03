@@ -81,7 +81,10 @@ extension EnginesListVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
+        let item = Model.shared.engines[indexPath.row]
+        
         let screen: GameGalleryVC = loadViewController()
+        screen.gameIdsToLoad = item.gamesIds
         navigationController?.pushViewController(screen, animated: true)
     }
 }
