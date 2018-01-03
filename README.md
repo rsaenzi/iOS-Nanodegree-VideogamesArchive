@@ -2,7 +2,8 @@
 6th project created as exercise for the iOS Developer Nanodegree @ Udacity that I am enrolled to.
 
 ### App Description:
-* VideoGames Archive is an app that allows users to get info about their favorite videogames, they can browse them by Engines, Platforms, Companies and Genres.
+* VideoGames Archive is an app that allows users to get info about their favorite videogames, they can browse them by Engines, Platforms, Companies and Genres. All the information is fetched from igdb.com.
+* At the bottom users will find the 4 options mentioned. If you tap one item you will see a carousel of games that match that criteria, for instance, if you are in Genres screen and you tap Strategy, you will get a carousel showing all Strategy games stored in the igdb.com server. Swipe right to navigate through the carousel.
 
 ### Xcode Project Setup:
 1. Clone the project on your mac
