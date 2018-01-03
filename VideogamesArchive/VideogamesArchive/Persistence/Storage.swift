@@ -24,8 +24,15 @@ class Storage {
         return realm
     }()
     
-    private init() {
-        
+    func save(gameInfo: StoredGameInfo) {
+        realm.add(gameInfo)
     }
     
+    func delete(gameInfo: StoredGameInfo) {
+        realm.delete(gameInfo)
+    }
+    
+    func getGameInfo(id: Int) -> StoredGameInfo? {
+        return realm.objects(StoredGameInfo.self).filter("id == %d", id).first
+    }
 }

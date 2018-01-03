@@ -58,6 +58,12 @@ extension GameGalleryVC: UICollectionViewDataSource {
                 case .success(let output):
                     
                     if let item = output.first {
+                        
+                        // TODO escribir en el Realm, tomando como param un objeto GameInfo
+                        // Persist the game
+                        let info = StoredGameInfo()
+                        info.id = item.id
+                        Storage.shared.save(gameInfo: info)
                     
                         // Save the data inside the model
                         Model.shared.gameGallery[indexPath.row] = item
