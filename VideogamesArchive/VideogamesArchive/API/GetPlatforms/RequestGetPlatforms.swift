@@ -66,7 +66,7 @@ class RequestGetPlatforms {
     private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionGetPlatforms) {
         
         // Converts the jsonString into a valid Object
-        guard let output: [OutputGetPlatforms] = jsonString.decodeFrom() else {
+        guard let output: [GamePlatform] = jsonString.decodeFrom() else {
             call(callback, .jsonDecodingError(jsonString: jsonString))
             return
         }

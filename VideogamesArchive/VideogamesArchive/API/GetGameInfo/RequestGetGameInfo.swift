@@ -66,7 +66,7 @@ class RequestGetGameInfo {
     private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionGetGameInfo) {
         
         // Converts the jsonString into a valid Object
-        guard let output: [OutputGetGameInfo] = jsonString.decodeFrom() else {
+        guard let output: [GameInfo] = jsonString.decodeFrom() else {
             call(callback, .jsonDecodingError(jsonString: jsonString))
             return
         }

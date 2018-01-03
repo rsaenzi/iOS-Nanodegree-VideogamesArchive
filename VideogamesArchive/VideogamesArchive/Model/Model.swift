@@ -10,11 +10,11 @@ class Model {
     
     static let shared = Model()
     
-    var engines = [OutputGetGameEngines]()
-    var platforms = [OutputGetPlatforms]()
-    var companies = [OutputGetCompanies]()
-    var genres = [OutputGetGenres]()
+    var engines = [GameEngine]()
+    var platforms = [GamePlatform]()
+    var companies = [GameCompany]()
+    var genres = [GameGenre]()
     
     var gameGalleryIds = [Int]()
-    var gameGallery = [OutputGetGameInfo?]()
+    var gameGallery = [GameInfo?]()
 }

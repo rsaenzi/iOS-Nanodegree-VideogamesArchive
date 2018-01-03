@@ -66,7 +66,7 @@ class RequestGetGameEngines {
     private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionGetGameEngines) {
         
         // Converts the jsonString into a valid Object
-        guard let output: [OutputGetGameEngines] = jsonString.decodeFrom() else {
+        guard let output: [GameEngine] = jsonString.decodeFrom() else {
             call(callback, .jsonDecodingError(jsonString: jsonString))
             return
         }

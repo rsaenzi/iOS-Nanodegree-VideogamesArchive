@@ -1,20 +1,19 @@
 //
-//  OutputGetPlatforms.swift
+//  GameEngine.swift
 //  VideogamesArchive
 //
-//  Created by Rigoberto Sáenz Imbacuán on 1/2/18.
+//  Created by Rigoberto Sáenz Imbacuán on 1/1/18.
 //  Copyright © 2018 Rigoberto Sáenz Imbacuán. All rights reserved.
 //
 
-struct OutputGetPlatforms: Codable {
+struct GameEngine: Codable {
     let id: Int
     let name: String
     let logo: Logo?
     let url: String
-    let website: String?
-    let summary: String?
-    let alternativeName: String?
     let gamesIds: [Int]
+    let platformsIds: [Int]?
+    let companiesIds: [Int]?
     
     // MARK: Decoding & Encoding to JSON
     enum CodingKeys: String, CodingKey {
@@ -22,9 +21,8 @@ struct OutputGetPlatforms: Codable {
         case name
         case logo
         case url
-        case website
-        case summary
-        case alternativeName = "alternative_name"
         case gamesIds = "games"
+        case platformsIds = "platforms"
+        case companiesIds = "companies"
     }
 }

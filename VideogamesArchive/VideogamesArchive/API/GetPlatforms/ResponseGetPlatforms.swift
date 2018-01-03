@@ -11,7 +11,7 @@ import Moya
 enum ResponseGetPlatforms {
     
     // Specific Responses
-    case success(output: [OutputGetPlatforms])
+    case success(output: [GamePlatform])
     
     // Status Code Errors
     case invalidStatusCode(statusCode: Int)

@@ -66,7 +66,7 @@ class RequestGetGenres {
     private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionGetGenres) {
         
         // Converts the jsonString into a valid Object
-        guard let output: [OutputGetGenres] = jsonString.decodeFrom() else {
+        guard let output: [GameGenre] = jsonString.decodeFrom() else {
             call(callback, .jsonDecodingError(jsonString: jsonString))
             return
         }

@@ -66,7 +66,7 @@ class RequestGetCompanies {
     private static func handleSuccess(_ jsonString: String, _ callback: @escaping CompletionGetCompanies) {
         
         // Converts the jsonString into a valid Object
-        guard let output: [OutputGetCompanies] = jsonString.decodeFrom() else {
+        guard let output: [GameCompany] = jsonString.decodeFrom() else {
             call(callback, .jsonDecodingError(jsonString: jsonString))
             return
         }

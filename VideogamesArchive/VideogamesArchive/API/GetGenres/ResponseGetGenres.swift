@@ -11,7 +11,7 @@ import Moya
 enum ResponseGetGenres {
     
     // Specific Responses
-    case success(output: [OutputGetGenres])
+    case success(output: [GameGenre])
     
     // Status Code Errors
     case invalidStatusCode(statusCode: Int)

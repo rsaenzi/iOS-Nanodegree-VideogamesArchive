@@ -1,22 +1,24 @@
 //
-//  OutputGetGenres.swift
+//  GameCompany.swift
 //  VideogamesArchive
 //
 //  Created by Rigoberto Saenz on 1/2/18.
 //  Copyright © 2018 Rigoberto Sáenz Imbacuán. All rights reserved.
 //
 
-struct OutputGetGenres: Codable {
+struct GameCompany: Codable {
     let id: Int
     let name: String
     let url: String
-    let gamesIds: [Int]
+    let developedGamesIds: [Int]?
+    let publishedGamesIds: [Int]?
     
     // MARK: Decoding & Encoding to JSON
     enum CodingKeys: String, CodingKey {
         case id
         case name
         case url
-        case gamesIds = "games"
+        case developedGamesIds = "developed"
+        case publishedGamesIds = "published"
     }
 }

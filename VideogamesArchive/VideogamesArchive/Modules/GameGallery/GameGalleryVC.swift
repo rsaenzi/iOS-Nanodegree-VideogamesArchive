@@ -25,7 +25,7 @@ class GameGalleryVC: UIViewController {
         
         // We create the array that will hold all the carousel images
         Model.shared.gameGalleryIds = self.gameIdsToLoad
-        Model.shared.gameGallery = [OutputGetGameInfo?](repeating: nil, count: self.gameIdsToLoad.count)
+        Model.shared.gameGallery = [GameInfo?](repeating: nil, count: self.gameIdsToLoad.count)
         self.collection.reloadData()
     }
 }
@@ -75,7 +75,7 @@ extension GameGalleryVC: UICollectionViewDataSource {
         return cell
     }
     
-    private func populate(_ cell: GameGalleryCell, using item: OutputGetGameInfo) {
+    private func populate(_ cell: GameGalleryCell, using item: GameInfo) {
         
         if let cover = item.cover, let coverURL = getCoverURL(from: cover.url) {
             cell.gameCover.kf.setImage(with: coverURL)

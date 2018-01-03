@@ -11,7 +11,7 @@ import Moya
 enum ResponseGetCompanies {
     
     // Specific Responses
-    case success(output: [OutputGetCompanies])
+    case success(output: [GameCompany])
     
     // Status Code Errors
     case invalidStatusCode(statusCode: Int)
