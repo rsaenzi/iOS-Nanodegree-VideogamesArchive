@@ -9,5 +9,10 @@
 import UIKit
 
 class GameGalleryCell: UICollectionViewCell {
-    
+    @IBOutlet weak var gameCover: UIImageView!
+    @IBOutlet weak var gameName: UILabel!
+    @IBOutlet weak var gameURL: UILabel!
+    @IBOutlet weak var gameSummary: UILabel!
+    @IBOutlet weak var gameStoryline: UILabel!
+    @IBOutlet weak var gameRating: UILabel!
 }

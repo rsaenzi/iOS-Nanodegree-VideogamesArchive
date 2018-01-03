@@ -17,20 +17,30 @@ class GameGalleryVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Here we reset the gallery
+        Model.shared.gameGallery = []
+        
         KVNProgress.show()
-        RequestGetGameInfo.request(gameId: 1942) { response in
+        RequestGetGameInfo.request(gameId: 1942) { [weak self] response in
             
             KVNProgress.dismiss()
             switch response {
                 
             case .success(let output):
                 print("Success")
-                break
+                
+                // We create the array that will hold all the carousel images
+                Model.shared.gameGallery = []
+                Model.shared.gameGallery = [OutputGetGameInfo?](repeating: nil, count: output.count)
+                
+                // TEMP
+                Model.shared.gameGallery = output
+                // TEMP
+                
+                self?.collection.reloadData()
                 
             default:
-                print("Error")
-                break
-//                self?.showSimpleAlert(title: "Error", message: "Error when trying to fetch all the Game Engines")
+                self?.showSimpleAlert(title: "Error", message: "Error when trying to fetch the images info for the carousel")
             }
         }
     }
@@ -38,12 +48,41 @@ class GameGalleryVC: UIViewController {
 }
 
 extension GameGalleryVC: UICollectionViewDataSource {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return Model.shared.gameGallery.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        
+        let cell: GameGalleryCell = collectionView.dequeue(indexPath)
+        
+        // The game was downloaded previously
+        if let item = Model.shared.gameGallery[indexPath.row] {
+            
+            if let cover = item.cover, let url = URL(string: "https:" + cover.url) {
+                cell.gameCover.kf.setImage(with: url, placeholder: #imageLiteral(resourceName: "SpinnerLoading"))
+            } else {
+                cell.gameCover.image = #imageLiteral(resourceName: "Platform")
+            }
+            
+            cell.gameName.text = item.name
+            cell.gameURL.text = item.url
+            cell.gameRating.text = "Rating: \(item.rating ?? 0)"
+            cell.gameSummary.text = item.summary
+            cell.gameStoryline.text = item.storyline
+            
+        } else { // Start the request to get the game info
+            
+            cell.gameCover.image = #imageLiteral(resourceName: "SpinnerLoading")
+            cell.gameName.text = nil
+            cell.gameURL.text = nil
+            cell.gameRating.text = nil
+            cell.gameSummary.text = nil
+            cell.gameStoryline.text = nil
+        }
+        
+        return cell
     }
 }
 

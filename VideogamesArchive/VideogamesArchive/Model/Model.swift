@@ -14,4 +14,6 @@ class Model {
     var platforms = [OutputGetPlatforms]()
     var companies = [OutputGetCompanies]()
     var genres = [OutputGetGenres]()
+    
+    var gameGallery = [OutputGetGameInfo?]()
 }

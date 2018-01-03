@@ -53,7 +53,6 @@ extension PlatformListVC: UITableViewDataSource {
         
         cell.platformName.text = item.name
         cell.platformURL.text = item.url
-//        cell.platformDescription.text = item.summary
         return cell
     }
 }
