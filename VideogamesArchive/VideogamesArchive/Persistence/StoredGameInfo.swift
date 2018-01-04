@@ -9,12 +9,12 @@
 import RealmSwift
 
 class StoredGameInfo: Object {
-    var id: Int = 0
-    var name: String = ""
-    var url: String = ""
-    var summary: String?
-    var storyline: String?
-    var rating: Float?
-    var screenshots: [String]?
-    var cover: String?
+    @objc dynamic var id: Int = 0
+    @objc dynamic var name: String?
+    @objc dynamic var url: String?
+    @objc dynamic var summary: String?
+    @objc dynamic var storyline: String?
+    @objc dynamic var rating: Float = 0
+    let screenshots = List<String>()
+    @objc dynamic var cover: String?
 }
