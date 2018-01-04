@@ -46,31 +46,45 @@ extension GameGalleryVC: UICollectionViewDataSource {
             
         } else { // Start the request to get the game info
             
-            // Set the default state of the cell, while its data is downloading
-            reset(cell)
-            
-            // Start a request to fetch the Game data
+            // Get the game id to fetch
             let gameIdToFetch = Model.shared.gameGalleryIds[indexPath.row]
-            RequestGetGameInfo.request(gameId: gameIdToFetch) { [weak self] response in
-                guard let `self` = self else { return }
+            
+            // First we ask if the item is already persisted
+            if let persistedItem = Storage.shared.getGameInfo(id: gameIdToFetch) {
                 
-                switch response {
-                case .success(let output):
+                // Save the data inside the model
+                Model.shared.gameGallery[indexPath.row] = persistedItem
+                
+                // Updates the cell
+                self.populate(cell, using: persistedItem)
+                
+            } else {
+                
+                // Set the default state of the cell, while its data is downloading
+                reset(cell)
+                
+                // Start a request to fetch the Game data
+                RequestGetGameInfo.request(gameId: gameIdToFetch) { [weak self] response in
+                    guard let `self` = self else { return }
                     
-                    if let item = output.first {
+                    switch response {
+                    case .success(let output):
                         
-                        // Persist the game item
-                        Storage.shared.save(gameInfo: item)
-                    
-                        // Save the data inside the model
-                        Model.shared.gameGallery[indexPath.row] = item
+                        if let downloadedItem = output.first {
+                            
+                            // Persist the downloaded game item
+                            Storage.shared.save(gameInfo: downloadedItem)
+                            
+                            // Save the data inside the model
+                            Model.shared.gameGallery[indexPath.row] = downloadedItem
+                            
+                            // Updates the cell
+                            self.populate(cell, using: downloadedItem)
+                        }
                         
-                        // Updates the cell
-                        self.populate(cell, using: item)
+                    default:
+                        break
                     }
-                    
-                default:
-                    break
                 }
             }
         }
