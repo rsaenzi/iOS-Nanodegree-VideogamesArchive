@@ -185,7 +185,7 @@ Summary</string>
                                 </cells>
                                 <connections>
                                     <outlet property="dataSource" destination="33W-kf-OGf" id="Cne-HZ-y16"/>
-                                    <outlet property="delegate" destination="33W-kf-OGf" id="E4G-ee-vsm"/>
+                                    <outlet property="delegate" destination="33W-kf-OGf" id="bWO-hZ-Gbx"/>
                                 </connections>
                             </collectionView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IconSwipeLeftBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Axr-bu-RmQ">

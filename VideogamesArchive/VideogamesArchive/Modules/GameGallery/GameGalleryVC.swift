@@ -83,7 +83,13 @@ extension GameGalleryVC: UICollectionViewDataSource {
                         }
                         
                     default:
-                        break
+                        
+                        // If there is an error on internet connection,
+                        // we show a dinasour placeholder, similar to google chrome :)
+                        self.errorOn(cell)
+                        
+                        // Also we display an alert
+                        self.showSimpleAlert(title: "Error", message: "No Internet Connection, please try again later")
                     }
                 }
             }
@@ -166,13 +172,29 @@ extension GameGalleryVC: UICollectionViewDataSource {
         cell.gameIcon3.image = nil
         cell.gameIcon4.image = nil
         
-        cell.gameName.text = nil
-        cell.gameURL.text = nil
-        cell.gameRating.text = nil
-        cell.gameSummary.text = nil
+        cell.gameName.text = "Loading..."
+        cell.gameURL.text = ""
+        cell.gameRating.text = ""
+        cell.gameSummary.text = ""
         
         cell.gameWaiting.startAnimating()
         cell.gameWaiting.isHidden = false
+    }
+    
+    private func errorOn(_ cell: GameGalleryCell) {
+        cell.gameCover.image = nil
+        cell.gameIcon1.image = #imageLiteral(resourceName: "NoInternet")
+        cell.gameIcon2.image = #imageLiteral(resourceName: "NoInternet")
+        cell.gameIcon3.image = #imageLiteral(resourceName: "NoInternet")
+        cell.gameIcon4.image = #imageLiteral(resourceName: "NoInternet")
+        
+        cell.gameName.text = "No Internet Connection"
+        cell.gameURL.text = ""
+        cell.gameRating.text = ""
+        cell.gameSummary.text = ""
+        
+        cell.gameWaiting.stopAnimating()
+        cell.gameWaiting.isHidden = true
     }
     
     private func getCoverURL(from imageLink: String) -> URL? {
@@ -188,10 +210,6 @@ extension GameGalleryVC: UICollectionViewDataSource {
         
         return url
     }
-}
-
-extension GameGalleryVC: UICollectionViewDelegate {
-    
 }
 
 extension GameGalleryVC: UICollectionViewDelegateFlowLayout {

@@ -126,7 +126,6 @@ extension Encodable {
     func encodeToJson() -> String? {
         
         let encoder = JSONEncoder()
-//        encoder.dateEncodingStrategy = .formatted(DateFormats.server.formatter)
         encoder.outputFormatting = .prettyPrinted
         
         let jsonData: Data
@@ -156,7 +155,6 @@ extension String {
     func decodeFrom<T: Decodable>() -> T? {
         
         let decoder = JSONDecoder()
-//        decoder.dateDecodingStrategy = .formatted(DateFormats.server.formatter)
         
         guard let jsonData = self.data(using: .utf8) else {
             return nil
