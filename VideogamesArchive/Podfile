@@ -7,8 +7,8 @@ target 'VideogamesArchive' do
 
   # Pods for VideogamesArchive
   pod 'Moya'
-  pod 'Kingfisher'
-  pod 'KVNProgress'
-  pod 'RealmSwift'
+  pod 'Kingfisher', '~> 4.6.1'
+  pod 'KVNProgress', '~> 2.3.1'
+  pod 'RealmSwift', '~> 3.0.2'
 
 end
